@@ -1,0 +1,50 @@
+html {
+	background-color: black;
+	color: white;
+	height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  color: white;
+  background-image: url(nectar.png);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  flex-shrink: 0;
+ }
+
+ footer > h1 {
+  text-shadow: 1px 1px 4px #00000080;
+}
+
+.whole {
+	text-align: center;
+}
+
+.title {
+	margin-top: 2%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.lyrics {
+	background: linear-gradient(to bottom, #000000 0%, #800000 155%);
+	color: white;
+	width: 40%;
+	margin-left: 30%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.music {
+	margin-bottom: 2%;
+	margin-top: 2%;
+}

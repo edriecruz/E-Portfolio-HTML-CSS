@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta charset="utf-8">
+
+	<title>Welcome</title>
+
+	<link rel="stylesheet" type="text/css" href="./login.css">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/735816ad58.css" rel="stylesheet">
+	
+</head>
+
+<body>
+		<div class="container">
+
+			<!-- LOGIN FORM -->
+			<form method="login-proceed" class="form login" id="login" autocomplete="off" name="formLogin">
+
+				<!-- USERNAME LOGIN -->
+        <div class="form__message form__message--error"></div>
+				<div class="form__field">
+              <label for="login__username">
+        				<span><i class="fa fa-user"></i></span>
+        			</label>
+        			<input id="login__username" type="text" name="username" class="form__input" placeholder="Username">
+      			</div>
+
+      			<!-- PASSWORD LOGIN -->
+      			<div class="form__field">
+        			<label for="login__password">
+        				<span><i class="fa fa-lock"></i></span>
+        			</label>
+        			
+        			<input id="login__password" type="password" name="password" class="form__input" placeholder="Password">
+      			</div>
+
+      			<!-- SUBMIT LOGIN -->
+      			<div class="form__field">
+        			<input type="button" name="Submit" value="Sign In" class="form__button" onclick="validate()">
+      			</div>
+
+      			<!-- SIGNUP REQUEST -->
+            <p class="form__text text--center">
+            <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+
+      			<p class="text--center">Not a member? <a href="./" id="linkCreateAccount">Sign up now</a> 
+      			</p>
+
+			</form>
+
+			<!-- SIGNUP FORM -->
+			<form action="#" method="signup-login" class="form signup form--hidden" id="createAccount" autocomplete="off">
+				
+				<!-- USERNAME SIGNUP -->
+				<div class="form__field">
+        			<label for="signup__username">
+        				<span><i class="fa fa-user"></i></span>
+        			</label>
+
+        			<input id="signup__username" type="text" name="username" class="form__input" placeholder="Username">
+      			</div>
+
+      			<!-- EMAIL SIGNUP -->
+				<div class="form__field">
+        			<label for="signup__email">
+        				<span><i class="fa fa-envelope"></i></span>
+        			</label>
+
+        			<input id="signup__email" type="email" name="email" class="form__input" placeholder="Email">
+      			</div>
+
+      			<!-- PASSWORD SIGNUP -->
+      			<div class="form__field">
+        			<label for="signup__password">
+        				<span><i class="fa fa-lock"></i></span>
+        			</label>
+        			
+        			<input id="signupPassword" type="password" name="password" class="form__input" placeholder="Password">
+      			</div>
+
+      			<!-- CONFIRM PASSWORD SIGNUP -->
+      			<div class="form__field">
+        			<label for="signup__confirmpassword">
+        				<span><i class="fa fa-lock"></i></span>
+        			</label>
+        			
+        			<input id="signupConfirmPassword" type="password" name="password" class="form__input" placeholder="Confirm Password">
+      			</div>
+
+      			<!-- SUBMIT LOGIN -->
+      			<div class="form__field">
+        			<input type="submit" value="Sign In">
+      			</div>
+
+      			<!-- SIGNUP REQUEST -->
+      			<p class="text--center">Already have an Account? <a href="./" id="linkLogin">Log in now</a> 
+      			</p>
+			</form>
+
+		</div>
+
+		<script src="login.js"></script>
+</body>
+</html>
